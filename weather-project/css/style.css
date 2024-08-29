@@ -1,111 +1,100 @@
-*{
-    font-family: "Rimouski";
+* {
+    font-family: "Rimouski", sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #293251;
+body {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container{
-    width: 300px;    
+.container {
+    width: 350px;
     background-color: #FFF;
-    
-    display: block;
-    margin: 0 auto;
-    
     border-radius: 10px;
-    padding-bottom : 50px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.app-title{
-    width: 300px;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-}
-
-.app-title p{
+.app-title {
     text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    color: #293251;
+    font-size: 1.5em;
+    color: #34495E;
+    margin-bottom: 20px;
 }
 
-.notification{
+.notification {
     background-color: #f8d7da;
     display: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.notification p{
+.notification p {
     color: #721c24;
+    margin: 0;
+    text-align: center;
     font-size: 1.2em;
-    margin: 0;
+}
+
+.weather-container {
     text-align: center;
-    padding: 10px 0;
 }
 
-.weather-container{
-    width: 300px;
-    height: 260px;
-    background-color: #F4F9FF;
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.weather-icon{
-    width: 300px;
-    height: 128px;
+.search-input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #34495E;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #34495E;
 }
 
-.weather-icon img{
-    display: block;
-    margin: 0 auto;
+.search-btn {
+    padding: 10px 20px;
+    background-color: #34495E;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
 }
 
-.temperature-value{
-    width: 300px;
-    height:60px;
+.weather-icon img {
+    max-width: 100px;
+    margin-bottom: 20px;
 }
 
-.temperature-value p{
-    padding: 0;
+.temperature-value p {
     margin: 0;
-    color: #293251;
     font-size: 4em;
-    text-align: center;
+    color: #34495E;
     cursor: pointer;
 }
 
-/* .temperature-value p:hover{
-    
-} */
-
-.temperature-value span{
-    color: #293251;
+.temperature-value span {
     font-size: 0.5em;
 }
 
-/* .temperature-description{
-    
-} */
-
-.temperature-description p{
-    padding: 8px;
-    margin: 0;
-    color: #293251;
-    text-align: center;
+.temperature-description p,
+.location p,
+.weather-details p {
+    margin: 5px 0;
+    color: #34495E;
     font-size: 1.2em;
 }
 
-/* .location{
-    
-} */
-
-.location p{
-    margin: 0;
-    padding: 0;
-    color: #293251;
-    text-align: center;
-    font-size: 0.8em;
+.weather-details p {
+    font-size: 1em;
 }
-
-
-
