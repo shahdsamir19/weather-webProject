@@ -1,4 +1,3 @@
-
 const notificationElement = document.querySelector(".notification");
 const iconElement = document.querySelector(".weather-icon img");
 const tempElement = document.querySelector(".temperature-value p");
